@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column{
+    float: left;
+    width: 45%;
+    background-image: url(h.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+.column2{
+    float: center;
+    width: 10%;
+    padding: 15px;
+  }
+  .column1{
+    float: right;
+    width: 45%;
+    background-image: url(h.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }

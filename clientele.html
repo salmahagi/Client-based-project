@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientele</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./clientele.css">
+  </head>
+<body class="body4">
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg 
+            xmlns="http://www.w3.org/2000/svg" height="48"
+             viewBox="0 96 960 960" width="48"><path d="m249 
+             849-42-42 231-231-231-231 42-42 231 231 231-231 42
+              42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+            </a></li>
+    
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="charge.html">Charges</a></li>
+          <li><a href="clientele.html">Clientele</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+    </ul>
+        <ul>
+      <li><a href="home.html">HOME</a></li>
+       <li class="hideOnMobile"><a href="about.html">About</a></li>
+       <li class="hideOnMobile"><a href="service.html">Services</a></li>
+       <li class="hideOnMobile"><a href="charge.html">Charges</a></li>
+       <li class="hideOnMobile"><a href="clientele.html">Clientele</a></li>
+       <li class="hideOnMobile"><a href="certificates.html">Certificates</a></li>
+    
+       <li class="menu-button" onclick=showSidebar()><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0
+         96 960 960" width="48"><path d="M120 816v-60h720v60H120Zm0-210v
+         -60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+        
+        </a></li>
+    </ul>
+      </nav>
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+    <div class="header">
+      <h1>OUR CLIENTELE</h1>
+    </div>
+    
+    
+    <div class="row">
+      <div class="column">
+        <p style="font-size: 50px;padding-top: 20px; padding-bottom: 50px; margin-right: 100px;">Over the past 
+          <strong>10</strong> ws are proud to have offered exeiniglary, services, snil solutioris jo multinational,
+           Financial Manufacturing Communications, Institutional and Hositelty companies, NGOs as
+            well as Acidemic, and Training Institutionis
+        </p>
+        <p style="font-size: 50px; padding-bottom: 115px; margin-right: 100px;">
+          <strong>Here are proud to showcase some our most recent clientele amongst others.</strong> 
+        </p>
+
+      </div>
+    </div>
+    
+    
+    
+    <div class="footer">
+      <img style="margin-top: 10px; border-radius: 10px; margin-left: 100px; margin-right: 50px;
+      width: 1400px; height: 800px;" src="clients.png" alt="Clients">
+    </div>
+</body>
+</html>

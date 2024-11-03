@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: rgba(51, 114, 185, 0.753);
+    padding: 20px;
+    text-align: center;
+    margin-bottom:20px;
+    border-radius:20px;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 45%;
+    padding: 10px;
+    background-color:rgba(97, 207, 250, 0.521);
+    border-radius:20px;
+    margin-left:20px;
+    margin-right: 50px;
+    color: white;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 45%;
+    float: right;
+    background-color:rgba(97, 207, 250, 0.521);
+    border-radius:20px;
+    margin-right:20px;
+  }
+
+  
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: rgba(51, 114, 185, 0.753);
+    padding: 10px;
+    text-align: center;
+    margin-top:20px;
+    border-radius:20px;
+    color: white;
+  }

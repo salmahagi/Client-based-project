@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg 
+        xmlns="http://www.w3.org/2000/svg" height="48"
+         viewBox="0 96 960 960" width="48"><path d="m249 
+         849-42-42 231-231-231-231 42-42 231 231 231-231 42
+          42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+        </a></li>
+
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="charge.html">Charges</a></li>
+      <li><a href="clientele.html">Clientele</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+</ul>
+    <ul>
+  <li><a href="home.html"><img style="height: 80px; width: 200px;" src="Itothyalogo.png"></a></li>
+   <li class="hideOnMobile"><a href="about.html">About</a></li>
+   <li class="hideOnMobile"><a href="service.html">Services</a></li>
+   <li class="hideOnMobile"><a href="charge.html">Charges</a></li>
+   <li class="hideOnMobile"><a href="clientele.html">Clientele</a></li>
+   <li class="hideOnMobile"><a href="certificates.html">Certificates</a></li>
+
+   <li class="menu-button" onclick=showSidebar()><a href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0
+     96 960 960" width="48"><path d="M120 816v-60h720v60H120Zm0-210v
+     -60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+    
+    </a></li>
+</ul>
+  </nav>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  <h1 style="text-align: center; font-size: 40px;">ITOTHYA<br>General Agencies LTD</h1>
+  <h4 style="text-align: center; font-size: 30px;">You Can Trust Us</h4>
+   <div class="column5"><h1 class="h10" style="padding: 20px; padding-bottom: 100px; padding-top: 220px; color: antiquewhite; 
+   padding-left: 130px;">Utmost satisfaction of our clients is the
+     <mark>supreme aim</mark><br> of our activity and the basics on which we build our <mark>future</mark></h1>
+    <ul style="font-size: 30px; color: black;  padding: 50px; margin-left: 100px; margin-right: 100px; 
+    background-color: rgba(240, 248, 255, 0.767);
+    border-radius: 20px; ">
+      <li><h3>Debt Recovery/Collection</h3></li>
+      <li><h3>Investigation/Skip Tracing</h3></li>
+      <li><h3>Process Server</h3></li>
+      <li><h3>Asset Searches</h3></li>
+      <li><h3>Debt Surveillance</h3></li>
+      <li><h3>Consultancy</h3></li>
+      <li><h3>Reconciliation</h3></li>
+    </ul></div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charges</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="charge.css">
+  </head>
+<body class="body3">
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg 
+            xmlns="http://www.w3.org/2000/svg" height="48"
+             viewBox="0 96 960 960" width="48"><path d="m249 
+             849-42-42 231-231-231-231 42-42 231 231 231-231 42
+              42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+            </a></li>
+    
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="charge.html">Charges</a></li>
+          <li><a href="clientele.html">Clientele</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+    </ul>
+        <ul>
+      <li><a href="home.html">HOME</a></li>
+       <li class="hideOnMobile"><a href="about.html">About</a></li>
+       <li class="hideOnMobile"><a href="service.html">Services</a></li>
+       <li class="hideOnMobile"><a href="charge.html">Charges</a></li>
+       <li class="hideOnMobile"><a href="clientele.html">Clientele</a></li>
+       <li class="hideOnMobile"><a href="certificates.html">Certificates</a></li>
+    
+       <li class="menu-button" onclick=showSidebar()><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0
+         96 960 960" width="48"><path d="M120 816v-60h720v60H120Zm0-210v
+         -60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+        
+        </a></li>
+    </ul>
+      </nav>
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+
+<div class="header">
+  <h1>OUR CHARGES</h1>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <p style="font-size: 50px; padding-bottom: 115px;">We strive to give our 
+     <strong> clientele the best</strong> competetive rates <strong>at all times.</strong>
+    </p>
+  </div>
+
+  <div class="column side">
+    <p style="font-size: 50px;">Our<strong> billing</strong>  and<strong> fees</strong> approach to our
+       services is based on<strong> mutual agreement</strong> and <strong>understanding</strong> between us and our clients</p>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <h1 style="font-size: 50px; text-decoration: underline;">ORGANOGRAM</h1>
+  <h2 style="font-size: 40px;">Our Organizational Structure</h2>
+  <p style="font-size: 30px;">As a start up, Itothya General Agencies Ltd
+     has developed an organizational structure to focus
+      on its clients requirements to grow the business while
+       ensuring sustainability Our team comprises of highly qualified, 
+       professional and competent staff who help grow professional relationships
+        our clients while providing the highest levels of services.
+  </p>
+  <img style="margin-top: 50px; border-radius: 10px; margin-left: 100px; margin-right: 100px;
+  width: 1000px; height: 800px;" src="org.png" alt="Organizational Structure">
+</div>
+    
+    
+</body>
+</html>
